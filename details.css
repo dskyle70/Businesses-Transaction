@@ -1,0 +1,168 @@
+
+body{
+    height: 100vh;
+    text-align: center;
+   height: 100%;
+   overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    position: absolute;
+    left: 10vw;
+    top: 3vh;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+div{
+    width: 90%;
+    height: 21%;
+    border: 2pt solid black;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+img{
+    position: relative;
+    display: inline;
+}
+div p{
+    font-size: 150%;
+}
+#addSelling_items{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    height: 60%;
+    width: 60%;
+    background: limegreen;
+    
+}
+#addSelling_items input,#addSelling_items #a.dd{
+    width: 40%;
+    height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#acc_name_opened,#_acc_name_opened,#acc_name_opened_,#acc_name_opened__{
+    text-transform: capitalize;
+}
+#done{
+    margin-left: 5%;
+}
+.cancel{
+    border: 1px solid black;
+    background-color: limegreen;
+    width: 30pt;
+    height: 30pt;
+   margin-left: 75%;
+   font-size: 200%;
+   margin-top: 2px;
+}
+.cancel:hover{
+    color: red;
+    border-color: red;
+}
+#selling_items span{
+    width: 40%;
+    border: 2pt solid black;
+    display: inline-block;
+}
+#error1,#error2,#error3,#error4,#error5{
+    color: red;
+    display: inline-block;
+    font-size: small;
+}
+#selling_items span input{
+    background-color: limegreen;
+    border: none;
+}
+.add_acc_inputs{
+    display: block;
+    width: 100%;
+    height: 30%;
+}
+#selling_items{
+    width: 100%;
+    height: 50%;
+    overflow: auto;
+}
+#rename{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    height: 40%;
+    width: 50%;
+    background: limegreen;
+
+}
+#rename input{
+    width: 40%;
+    height: 10%;
+    font: 1em sans-serif;
+    text-align: center;
+}
+#transactions p button{
+    text-align: center;
+    height: 60px;
+    font: 80% sans-serif;
+    background: white;
+    border-radius: 0%;
+    overflow: auto;
+    text-transform: capitalize;
+    width: 30%;
+}
+#transactions p.bu{
+    display:flex;
+    flex-direction: row;
+    gap: 3%;
+    justify-content: center;
+    width: 100%;
+}
+select option{
+    text-transform: lowercase;
+}
+#confirm_purchase,#confirm_pdebt{
+    position: absolute;
+    display: none;
+    background-color: limegreen;
+    height: 70%;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+}
+#confirm_purchase button,#confirm_pdebt button{
+    display: inline-block;
+    margin: 1% 10%;
+    width: 5%;
+    height: 5%;
+}
+div.add_acc_inputs{
+    height: 40%;
+    border: none;
+    border-bottom: 10px solid black;
+}
+
+@media only screen and (max-width:735px){
+    
+    #transactions p.bu{
+        display:flex;
+        flex-direction: row;
+        gap: 3%;
+    }
+    p.bu button{
+        font-size: 15px;
+    }
+    div#trans_history{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:320px){
+    a{
+        padding: 5px 10px;
+        top: 4vh;
+    }
+}

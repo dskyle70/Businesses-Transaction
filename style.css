@@ -1,0 +1,112 @@
+*{
+    text-align: center;
+    position: relative;
+    background-color: limegreen;
+}
+body{
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+}
+h1{
+    font-size: 50pt;
+}
+#accounts{
+    position: relative;
+    width: 99%;
+    height: 35%;
+    border: 2pt solid black;
+    background: grey;
+    overflow-x: auto;
+    
+}
+#plus button{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    font-size: 1000%;
+    border: 2px solid black;
+}
+#plus button:hover{
+    color: red;
+    border: 2px solid rgb(255, 0, 0);
+}
+#plus{
+   
+}
+#add_new_account,#rename{
+    position: absolute;
+    width: 60%;
+    height: 200pt;
+    background-color: white;
+    left: 20%;
+    top: 30%;
+    border: 2pt solid black;
+    display: none;
+}
+#new_account_name, #rename_name{
+    margin-top: 5%;
+    width: 80%;
+    height: 30%;
+    font-size: 200%;
+    text-transform: uppercase;
+    display: none;
+}
+#create,#ren{
+    width: 40%;
+    height: 40px;
+    margin-top: 10px;
+    display: none;
+    font-size: xx-large;
+}
+.cancel{
+    border: 1px solid black;
+    background-color: limegreen;
+    width: 30pt;
+    height: 30pt;
+   margin-left: 75%;
+   font-size: 200%;
+   margin-top: 2px;
+}
+.account{
+    display: inline-block;
+    width: 18%;
+    height: 90%;
+    font-size: 200%;
+    background-color: limegreen;
+    margin: 10px;
+    position: relative;
+}
+.account p{
+    position: relative;
+    margin-top: 5px auto;
+    height: 100px;
+    width: 100%;
+    overflow: auto;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.account button{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -40pt;
+    margin-bottom: 20pt;
+    
+    
+}
+#add_new_account p,#error2{
+    color: red;
+    display: none;
+    background: white;
+}
+button{
+    width: 50%;
+    height: 10%;
+    font-size: 50%;
+}
+#create{
+    font-size: xx-large;
+}

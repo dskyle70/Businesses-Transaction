@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_ Account Details</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <a href="index.html" class="back">BACK</a><h1 id="_acc_name_opened"></h1>
+    <div>click 
+        <span onclick="addSelling_items()" style="color: green;">here</span>
+         to add to what you sell</div>
+    <div id="transactions">
+    <p>what did 
+        <span id="acc_name_opened"></span>
+         do ?</p>
+         <p class="bu"><button type="button" onclick="ch_trans('purchaase')">purchase something</button><button type="button" onclick="ch_trans('debt')">pay debt</button><button type="button" onclick="ch_trans('collect')">collect money</button></p>
+    <p>Did 
+        <span id="acc_name_opened_"></span> buy <select id="selling_it"></select>, if so, how many did <span id="acc_name_opened__"></span> buy</p>
+    <p>answer: <input type="number" id="qty"><br><span id="error4"></span>
+    <p>how much did <span id="__acc_name_opened"></span> pay: <input type="number" id="payment"><br><span id="error5"></span></p>
+    <button onclick="confirm('purchase')" id="done">DONE</button></p></div>
+    <p>Debt Balance</p>
+        <div id="debt_balance">
+
+        </div>
+    <p>History</p>
+    <div id="trans_history">
+        
+    </div>
+
+<div id="rename">
+    <button type="button" class="cancel" onclick="hideRename()">X</button>
+    <input type="text" id="new_si_name" placeholder="enter new name for selling item">
+        <input type="number" id="new_price" placeholder="enter the price">
+        <br><span id="error3"></span><br>
+        <button type="button" onclick="rename_item(document.getElementById('new_si_name').value,document.getElementById('new_price').value)">RENAME</button>
+</div>
+    <div id="addSelling_items">
+        <div class="add_acc_inputs">
+        <button type="button" class="cancel" onclick="hideAddSellingItem()">X</button>
+
+        <input type="text" id="new_selling_item" placeholder="add a new selling item">
+        <input type="number" id="price" placeholder="enter the price">
+
+        <br><span id="error1"></span>   <span id="error2"></span><br>
+        <button type="button" onclick="add_item()" id="a.dd">ADD</button>
+        </div>
+        
+        <br>you sell<p id="selling_items">:you do not have any stored selling item;</p></div>
+    <div id="confirm_purchase"><br><br>
+        Are you sure that <span id="ano" ></span> bought <span id="qtty"></span> <span id="item_purc"></span><br>
+        and paid N<span id="pp"></span>, meaning that <span id="anod"></span> <span id="conf_1h"></span><br>
+        <button type="button" onclick="done('purchase')">YES</button><button type="button" onclick="hideConfirm()">NO</button>
+    </div> 
+    <div id="confirm_pdebt"><br><br>
+        Are you sure that<span id="anoo"></span> paid <span id="dbt_pd"></span><br>
+        <button type="button" onclick="done('pay_debt')">YES</button><button type="button" onclick="hideConfirm()">NO</button>
+    </div>
+<script src="details.js">
+
+</script>
+</body>
+</html>

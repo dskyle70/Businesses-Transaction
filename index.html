@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sty.css">
+    <title>Businness Transactions App</title>
+</head>
+<body>
+    <h1>Businness Transactions</h1>
+    <div class="main-show">
+    <div id="accounts">click the plus button below to add an account</div>
+    <div id="plus"><button type="button" onclick="addAccount()">+</button></div>
+    </div>
+
+    <div id="add_new_account">
+        <button type="button" class="cancel" onclick="hideAddAccount()">X</button><br>
+        <input type="text" id="new_account_name" placeholder="enter the name of the new account" maxlength="30"><br>
+        <p id="error1">this input cannot be left empty </p><br>
+        <button type="button" id="create" onclick="createAccount()">CREATE</button><br>
+    </div>
+
+    <div id="rename">
+        <button type="button" class="cancel" onclick="hideRename()">X</button><br>
+        <input type="text" id="rename_name" placeholder="enter the new name" maxlength="30"><br>
+        <p id="error2">this input cannot be left empty </p><br>
+        <button type="button" id="ren" onclick="rename(document.getElementById('rename_name').value)">RENAME</button><br>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
